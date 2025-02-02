@@ -116,17 +116,12 @@ docker build -t number-classifier .
 
 The project includes a test script that verifies various API endpoints and responses.
 
-1. Make the script executable:
-```bash
-chmod +x scripts/test_api.sh
-```
-
-2. Run the tests (defaults to localhost):
+1. Run the tests (defaults to localhost):
 ```bash
 ./scripts/test_api.sh
 ```
 
-3. Test against a specific API URL:
+2. Test against a specific API URL:
 ```bash
 ./scripts/test_api.sh "http://your-api-url:8080"
 ```
