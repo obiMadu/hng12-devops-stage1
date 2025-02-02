@@ -1,5 +1,5 @@
 # Default API URL if not provided
-API_URL=${1:-"http://128.199.1.29:8080"}
+API_URL=${1:-"http://localhost:8080"}
 
 # Colors for output
 GREEN='\033[0;32m'
