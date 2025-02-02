@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/number-classifier/internal/api"
-	"github.com/number-classifier/internal/middleware"
+	"github.com/obiMadu/hng12-devops-stage1/internal/api"
+	"github.com/obiMadu/hng12-devops-stage1/internal/middleware"
 )
 
 func main() {

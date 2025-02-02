@@ -1,4 +1,4 @@
-module github.com/number-classifier
+module github.com/obiMadu/hng12-devops-stage1
 
 go 1.21
 

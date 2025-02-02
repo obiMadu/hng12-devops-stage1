@@ -6,9 +6,9 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/number-classifier/internal/calculator"
-	"github.com/number-classifier/internal/client"
-	"github.com/number-classifier/pkg/models"
+	"github.com/obiMadu/hng12-devops-stage1/internal/calculator"
+	"github.com/obiMadu/hng12-devops-stage1/internal/client"
+	"github.com/obiMadu/hng12-devops-stage1/pkg/models"
 )
 
 func HealthCheck(c *gin.Context) {
