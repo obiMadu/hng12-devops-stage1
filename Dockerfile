@@ -19,7 +19,8 @@ COPY . .
 # Build the application with optimizations
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build \
     -ldflags='-w -s -extldflags "-static"' \
-    -o /go/bin/number-classifier ./cmd/server
+    -a -installsuffix cgo \
+    -o /go/bin/number-classifier github.com/obiMadu/hng12-devops-stage1/cmd/server
 
 # Stage 2: Runtime
 FROM scratch
