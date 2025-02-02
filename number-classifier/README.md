@@ -102,7 +102,7 @@ curl "http://localhost:8080/api/classify-number?number=371"
 
 ## Development
 
-Run tests:
+Run unit tests:
 ```bash
 go test ./...
 ```
@@ -110,6 +110,42 @@ go test ./...
 Build Docker image:
 ```bash
 docker build -t number-classifier .
+```
+
+## Testing the API
+
+The project includes a test script that verifies various API endpoints and responses.
+
+1. Make the script executable:
+```bash
+chmod +x scripts/test_api.sh
+```
+
+2. Run the tests (defaults to localhost):
+```bash
+./scripts/test_api.sh
+```
+
+3. Test against a specific API URL:
+```bash
+./scripts/test_api.sh "http://your-api-url:8080"
+```
+
+The script tests:
+- Health endpoint
+- Armstrong number (371)
+- Perfect number (6)
+- Prime number (17)
+- Regular number (42)
+- Invalid input handling
+
+Requirements:
+- curl
+- jq (for JSON formatting)
+
+Install requirements on Ubuntu:
+```bash
+sudo apt-get update && sudo apt-get install -y curl jq
 ```
 
 ## License
